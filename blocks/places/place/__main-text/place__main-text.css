@@ -1,0 +1,12 @@
+.place__main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin: 0;
+}
+
+@media (max-width: 1023px) {
+    .place__main-text {
+        gap: 25px;
+    }
+}
