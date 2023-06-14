@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествия по России</title>
-    <link rel="stylesheet" href="./page/index.css">
+    <link rel="stylesheet" href="pages/index.css">
 </head>
 <body class="root">
     <header class="header">
         <div class="header__logo"></div>
-        <nav class="header__lang-link">
-            <a href="#" class="header__lang-link header__lang-link_ru">Ru</a>
-            <a href="#" class="header__lang-link">En</a>
-        </nav>
+        <ul class="header__lang-links">
+            <li class="header__lang-link header__lang-link_active">Ru</li>
+            <li class="header__lang-link">En</li>
+        </ul>
     </header>
     <main class="content">
         <section class="lead">
             <h1 class="lead__title">Путешествия по России</h1>
             <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-            <img src="./images/lead.jpg" alt="Главное фото" class="lead__image">
-            <p class="lead__caption">ваша полка — верхняя</p>
+            <figure class="lead__container">
+                <img src="./images/lead.jpg" alt="Главное фото" class="lead__image">
+                <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+            </figure>
         </section>
         <section class="intro">
             <h2 class="intro__title">Чего мы там не видели?</h2>
@@ -33,25 +35,25 @@
             </ul>
         </section>
         <section class="photo-grid">
-                <img class="photo-grid__item" src="./images/photo-grid%20(1).jpg" alt="Первое фото">
-                <img class="photo-grid__item" src="./images/photo-grid%20(2).jpg" alt="Второе фото">
-                <img class="photo-grid__item" src="./images/photo-grid%20(3).jpg" alt="Третье фото">
-                <img class="photo-grid__item" src="./images/photo-grid%20(4).jpg" alt="Четвертое фото">
-                <img class="photo-grid__item" src="./images/photo-grid%20(5).jpg" alt="Пятое фото">
-                <img class="photo-grid__item" src="./images/photo-grid%20(6).jpg" alt="Шестое фото">
-                <img class="photo-grid__item" src="./images/photo-grid%20(7).jpg" alt="Седьмое фото">
-                <img class="photo-grid__item" src="./images/photo-grid%20(8).jpg" alt="Восьмое фото">
-                <img class="photo-grid__item" src="./images/photo-grid%20(9).jpg" alt="Девятое фото">
-                <img class="photo-grid__item" src="./images/photo-grid%20(10).jpg" alt="Десятое фото">
-                <img class="photo-grid__item" src="./images/photo-grid%20(11).jpg" alt="Одиннадцатое фото">
-                <img class="photo-grid__item" src="./images/photo-grid%20(12).jpg" alt="Двенадцатое фото">
+                <img class="photo-grid__item" src="./images/photo-grid%20(1).jpg" alt="Поезд">
+                <img class="photo-grid__item" src="./images/photo-grid%20(2).jpg" alt="Снежные горы">
+                <img class="photo-grid__item" src="./images/photo-grid%20(3).jpg" alt="Рассвет">
+                <img class="photo-grid__item" src="./images/photo-grid%20(4).jpg" alt="Тайга">
+                <img class="photo-grid__item" src="./images/photo-grid%20(5).jpg" alt="Байкал">
+                <img class="photo-grid__item" src="./images/photo-grid%20(6).jpg" alt="Океан">
+                <img class="photo-grid__item" src="./images/photo-grid%20(7).jpg" alt="Горы">
+                <img class="photo-grid__item" src="./images/photo-grid%20(8).jpg" alt="Волнорез">
+                <img class="photo-grid__item" src="./images/photo-grid%20(9).jpg" alt="Туман">
+                <img class="photo-grid__item" src="./images/photo-grid%20(10).jpg" alt="Закат в горах">
+                <img class="photo-grid__item" src="./images/photo-grid%20(11).jpg" alt="Побережье">
+                <img class="photo-grid__item" src="./images/photo-grid%20(12).jpg" alt="Туман в горах">
         </section>
         <section class="places container">
             <article class="place">
                 <h2 class="place__title">Куршская коса</h2>
                 <div class="place__website">
                     <p class="place__url-heading">url</p>
-                    <a href="https://park-kosa.ru" class="place__link" target="_blank">park-kosa.ru</a>
+                    <a href="https://park-kosa.ru" class="place__link link" target="_blank">park-kosa.ru</a>
                 </div>
                 <img src="./images/KushKosa_place.jpg" alt="Куршская коса" class="place__image">
                 <div class="place__main-text">
@@ -63,7 +65,7 @@
                 <h2 class="place__title">Кольский</h2>
                 <div class="place__website">
                     <p class="place__url-heading">url</p>
-                    <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link" target="_blank">National Geographic</a>
+                    <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link  link" target="_blank">National Geographic</a>
                 </div>
                 <img src="./images/Kolsk_place.jpg" alt="Кольский" class="place__image">
                 <div class="place__main-text">
@@ -77,7 +79,7 @@
                 <h2 class="place__title">Алтай</h2>
                 <div class="place__website">
                     <p class="place__url-heading">url</p>
-                    <a href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ" class="place__link" target="_blank">YouTube</a>
+                    <a href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ" class="place__link  link" target="_blank">YouTube</a>
                 </div>
                 <img src="./images/Altay_place.jpg" alt="Алтай" class="place__image">
                 <div class="place__main-text">
@@ -90,7 +92,7 @@
                 <h2 class="place__title">Зимний Байкал</h2>
                 <div class="place__website">
                     <p class="place__url-heading">url</p>
-                    <a href="https://vk.com/baikalmile" class="place__link" target="_blank">https://vk.com/baikalmile</a>
+                    <a href="https://vk.com/baikalmile" class="place__link  link" target="_blank">https://vk.com/baikalmile</a>
                 </div>
                 <img src="./images/Baykal_place.jpg" alt="Зимний Байкал" class="place__image">
                 <div class="place__main-text">
@@ -104,7 +106,7 @@
                 <h2 class="place__title">Карелия</h2>
                 <div class="place__website">
                     <p class="place__url-heading">url</p>
-                    <a href="https://vodlozero.ru" class="place__link" target="_blank">http://vodlozero.ru/</a>
+                    <a href="https://vodlozero.ru" class="place__link  link" target="_blank">http://vodlozero.ru/</a>
                 </div>
                 <img src="./images/Karelia_place.jpg" alt="Карелия" class="place__image">
                 <div class="place__main-text">
@@ -123,11 +125,11 @@
     </main>
 <footer class="footer">
     <nav class="footer__links">
-        <a href="https://yandex.ru/maps" target="_blank" class="footer__link">Карты</a>
-        <a href="https://yandex.ru/pogoda" target="_blank" class="footer__link">Погода</a>
-        <a href="https://rasp.yandex.ru" target="_blank" class="footer__link">Расписание</a>
-        <a href="https://calendar.yandex.ru" target="_blank" class="footer__link">Календарь</a>
-        <a href="https://travel.yandex.ru" target="_blank" class="footer__link">Путешествия</a>
+        <a href="https://yandex.ru/maps" target="_blank" class="footer__link  link">Карты</a>
+        <a href="https://yandex.ru/pogoda" target="_blank" class="footer__link  link">Погода</a>
+        <a href="https://rasp.yandex.ru" target="_blank" class="footer__link  link">Расписание</a>
+        <a href="https://calendar.yandex.ru" target="_blank" class="footer__link  link">Календарь</a>
+        <a href="https://travel.yandex.ru" target="_blank" class="footer__link  link">Путешествия</a>
     </nav>
     <p class="footer__copyright">&copy; 2023. Ольга Солодовникова</p>
 </footer>

@@ -1,6 +1,5 @@
 .place {
     display: grid;
-    grid-template-rows: fit-content(152px) fit-content(460px);
     grid-template-columns: 460px 484px;
     gap: 48px 40px;
     padding-bottom: 80px;
@@ -14,7 +13,6 @@
     .place {
         gap: 48px 32px;
         grid-template-columns: 440px 456px;
-        grid-template-rows: fit-content(152px) fit-content(440px);
     }
 }
 
@@ -26,11 +24,11 @@
     }
 }
 
-@media (max-width: 676px) {
+@media (max-width: 767px) {
     .place {
         grid-template-columns: repeat(1, auto);
-        min-width: 320px;
         row-gap: 32px;
+        padding-bottom: 50px;
     }
 }
 

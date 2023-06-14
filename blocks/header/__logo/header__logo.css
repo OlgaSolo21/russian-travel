@@ -1,7 +1,6 @@
 .header__logo {
-    background-size: contain;
+    background-size: cover;
     background-image: url("../../../images/header_logo.svg");
-    position: absolute;
     width: 176px;
     height: 52px;
     z-index: 1;
